@@ -24,6 +24,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm ci
-      - run: npx tsc -noEmit
       - run: npx run format
       - run: npx run types
